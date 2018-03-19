@@ -1,2 +1,4 @@
 # codewars
-codewars assignments
+
+daily codewars challenges in javascript and c#
+
