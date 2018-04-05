@@ -11,11 +11,7 @@ Examples
 ```javascript
 let numbers = [4, 4, 4, 7, 4];
 
-const stray = (numbers) => {
-  // return the number thats not the same
-  let diff = [...new Set(numbers)];
-  return diff
- 
-}
+const stray = (numbers) => numbers.filter((number) => numbers.indexOf(number) === numbers.lastIndexOf(number))[0];
+
 stray(numbers);
 ```
