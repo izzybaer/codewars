@@ -17,26 +17,25 @@ Dog Years
 +5 dog years for each year after that
 
 ```javascript
-const catDog = (humanYears) => {
-  // return humanYears, catYears, dogYears
+var humanYearsCatYearsDogYears = function(humanYears) {
+  // Your code here!
   let catYears = 0;
   let dogYears = 0;
   
-  for(let i = 1; i < humanYears.length; i++){
-    if (humanYears === 1) {
+  for(let i = 0; i <= humanYears; i++){
+    if (i == 1) {
       catYears = 15;
       dogYears = 15;
-    } else if (humanYears === 2) {
+    } else if (i == 2) {
       catYears = 24;
       dogYears = 24;
     } else if (humanYears >= 3) {
-      catYears += 4;
-      dogYears += 5;
+      catYears = catYears + 4;
+      dogYears = dogYears + 5;
     }
   }
   return [humanYears, catYears, dogYears];
 }
-catDog(4)
 ```
 
 // if (humanYears === 1) catYears && dogYears === 15
